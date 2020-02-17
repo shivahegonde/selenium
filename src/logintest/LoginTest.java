@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 class LoginTest {
     WebDriver driver;
@@ -18,7 +21,9 @@ class LoginTest {
         this.driver = driver;
     }
 
-    public void startTest() throws InterruptedException {
+    @Test //This is TestNG annotation
+
+    public void beginTest() throws IOException, InterruptedException {
         driver.findElement(By.linkText("Sign in")).click();
         System.out.print("Title of the page=== " + driver.getCurrentUrl());
         Thread.sleep(2000);
