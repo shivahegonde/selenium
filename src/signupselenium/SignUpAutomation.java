@@ -1,3 +1,5 @@
+package signupselenium;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -67,7 +69,7 @@ class SignUpAutomation {
     }
 
     public static void startTesting() {
-        SignUpAutomation signUpAutomation = new SignUpAutomation();
+        signupselenium.SignUpAutomation signUpAutomation = new signupselenium.SignUpAutomation();
         signUpAutomation.setFirstName("Shiv");
         signUpAutomation.setLastName("Hegonde");
         signUpAutomation.setPhone("9988778899");
